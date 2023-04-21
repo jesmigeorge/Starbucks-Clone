@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css linking -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- for favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Starbucks Coffee Shop</title>
+</head>
+<body>
+
+    <!-- the whole body -->
+    <div class="container" id="blur">
+        <!-- navbar section -->
+        <div class="navbar">
+            <div class="brand-image">
+                <img src="assets/starbucks.png" alt="" class="image-logo">
+            </div>
+            <div class="navbar-bar">
+                <div class="nav-items"><a href="#home" class="nav-element">Home</a></div>
+                <div class="nav-items"><a href="#gift" class="nav-element">Gift</a></div>
+                <div class="nav-items"><a href="#order" class="nav-element">Order</a></div>
+                <div class="nav-items"><a href="#pay" class="nav-element">Pay</a></div>
+                <div class="nav-items"><a href="#store" class="nav-element">Store</a></div>
+            </div>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search Here" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>  
+
+        <!-- signup/login container -->
+        <div class="signup-login-container">
+            <div class="login-text">
+                <h3>Avail benefits!Sign up or Login for My Starbucks Rewards</h3>
+            </div>
+            <div class="button-signupLogin">
+                <button class="button-login-signup" id="button-login-signup-id" onclick="toggle()">SignUp/Login</button>
+            </div>
+        </div>
+        
+        <!-- handcrafted curations -->
+        <div class="handcrafted-curations">
+            <h2 class="curations-heading">Handcrafted Curations</h2>
+            <div class="curations-container">
+                <div class="curations-img">
+                    <div class="curations-img-pic"><img src="assets/drinks.png" alt="" class="handcrafted"></div>
+                    <div class="curations-img-text">Drinks</div>
+                </div>
+                <div class="curations-img">
+                    <div class="curations-img-pic"><img src="assets/food.webp" alt="" class="handcrafted"></div>
+                    <div class="curations-img-text">Food</div>
+                </div>
+                <div class="curations-img">
+                    <div class="curations-img-pic"><img src="assets/merchandise.jpg" alt="" class="handcrafted"></div>
+                    <div class="curations-img-text">Merchandise</div>
+                </div>
+                <div class="curations-img">
+                    <div class="curations-img-pic"><img src="assets/coffeeathone.jpg" alt="" class="handcrafted"></div>
+                    <div class="curations-img-text">Coffee at Home</div>
+                </div>
+                <div class="curations-img">
+                    <div class="curations-img-pic"><img src="assets/readytoeat .jpg" alt="" class="handcrafted"></div>
+                    <div class="curations-img-text">Ready to eat</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- advertisement -->
+        <div class="advertisement">
+            <div class="advertise-image">
+                <img src="assets/belgiumChocolate.png" alt="" class="advertise-img-inner">
+            </div>
+            <div class="advertise-content">
+                <p class="advertise-intro">Introducing...</p>
+                <h4 class="advertise-desc2">Belgium Chocolate</h4>
+                <p class="advertise-desc2">Indulge in the exquisite Belgian Chocolate.</p>
+                <div class="advertise-price"><h4>$7.00</h4></div>
+                <div class="order-button-container">
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- gifts - bestsellers -->
+        <div id="gift">
+            <h2 class="gift-heading">BestSeller Gifts</h2>
+            <div class="bestseller-container">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/hotchocolate.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Hot Chocolate</h2>
+                        <p class="description">Hot chocolate is a dreamy treat on a cold day.</p>
+                        <h4 class="price">$3.75</h4>
+                        <button class="button">Buy now!!!</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/caramelLatte.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Caramel Latte</h2>
+                        <p class="description">Crafted this caramelly and smooth beverage for you.</p>
+                        <h4 class="price">$2.75</h4>
+                        <button class="button">Buy now!!!</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/coldCoffee.webp" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Cold Coffee</h2>
+                        <p class="description">Cold Coffee is super refreshing on a hot summer day!.</p>
+                        <h4 class="price">$4.75</h4>
+                        <button class="button">Buy now!!!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- orders -->
+        <div id="order">
+            <div class="order-outer-container">
+                <h1 class="order-heading">ORDER ONLINE</h1>
+                <div class="order-inner-container">
+                    <div class="order-image-container">
+                        <div class="order-image"><img src="assets/zomato.png" alt="" class="order-img"></div>
+                        <div class="order-image"><img src="assets/swiggy.png" alt="" class="order-img"></div>
+                    </div>
+                </div>
+                <div class="order-button-companies">
+                    <button class="order-button-online">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
+        <footer>
+            <div class="footer-image">
+                <img src="assets/starbucks.png" alt="" class="image-logo">
+            </div>
+            <div class="about-us">
+                <div class="footer-heading"><h3>About Us</h3></div>
+                <div>Our Heritage</div>
+                <div>Our Company</div>
+                <div>Coffeehouse</div>
+            </div>
+            <div class="responsibility">
+                <div class="footer-heading"><h3>Responsibility</h3></div>
+                <div>Community</div>
+                <div>Ethical Sourcing</div>
+                <div>Environment</div>
+                <div>Diversity</div>
+            </div>
+            <div class="quick-links">
+                <div class="footer-heading"><h3>Quick Links</h3></div>
+                <div>Delivery</div>
+                <div>Season Gifting</div>
+                <div>Careers</div>
+                <div>Customer Service</div>
+                <div>FAQs</div>
+            </div>
+            <div class="social-media">
+                <div class="footer-heading"><h3>Social Media</h3></div>
+                <div class="social-media-img-container">
+                    <div class="social-media-image">
+                        <img src="assets/facebook.png" alt="" class="social-media-icons">
+                    </div>
+                    <div class="social-media-image">
+                        <img src="assets/instagram.png" alt="" class="social-media-icons">
+                    </div>
+                    <div class="social-media-image">
+                        <img src="assets/twitter.png" alt="" class="social-media-icons">
+                    </div>
+                </div>
+            </div>
+            <div class="download-app">
+                <div class="app-image">
+                    <img src="assets/appstore.svg" alt="" class="store-icons">
+                </div>
+                <div class="app-image">
+                    <img src="assets/playstore.png" alt="" class="store-icons">
+                </div>
+            </div>
+        </footer>
+    </div>    
+
+    <!-- popup login and signup -->
+    <div class="login-box" id="popup">
+        <img src="assets/close.png" alt="" class="close" onclick="toggle()">
+        <form action="">
+            <h2 class="signup-login-header">Login</h2>
+            <div class="input-box">
+                <span class="icon-image"><img src="assets/email.png" alt=""></span>
+                <input type="email" required id="email">
+                <label for="email">E-Mail</label>
+            </div>
+            <div class="input-box">
+                <span class="icon-image"><img src="assets/lock.png" alt=""></span>
+                <input type="password" minlength="8" maxlength="32" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="remember-me">
+                <label for="remember_me"><input type="checkbox" id="remember_me" name="remember__me">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="close-button">Login</button>
+            <div class="register-now">
+                <p>Don't have an account?<a href="#" onclick="window.location.href='./assets/signin.html';">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
